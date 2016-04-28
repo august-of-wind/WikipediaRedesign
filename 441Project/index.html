@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wikipedia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+
+<div class="row">
+  <div class="col-lg-6 col-md-5 col-sm-5 col-xs-5 text-right">
+    <a href="#"><a href="#" onClick="showOtherDiv();"><img src="wiki.png" alt="Wikipedia: Remix" style="max-height: 100px"></a>
+  </div>
+  <div class="col-lg-6 col-md-7 col-sm-7 col-xs-7 text-left">
+    <h1>Wikipedia</h1>
+    <h4><small>The Free Encyclopedia</small></h4>
+  </div>
+</div>
+
+<div class="row">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="nav navbar-left">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding: 20px">
+            <img src="wikiMenu.png" alt="Menu" style="max-height: 18px; padding-left: 20px" >
+             <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><strong>You are currently logged in, August Meyer</strong></a></li>
+              <li><a href="#">Log Out</a></li>
+              <li><a href="#">My Contributions</a></li>
+              <li><a href="#">Talk</a></li>
+              <li><a href="#">Community Portal</a></li>
+              <li><a href="#">Create New Account</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Current Page Revision History</a></li>
+              <li><a href="#">Current Page Conversation</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 30px">
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <img src="wikiLang.png" alt="Languages" style="max-height: 30px; padding-left: 20px">
+          <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><a href="#" onClick="showMyDiv();" ><strong>English</strong></a></li>
+              <li><a href="#">العربية</a></li>
+              <li><a href="#">Bahasa Indonesia</a></li>
+              <li><a href="#">Bahasa Melayu</a></li>
+              <li><a href="#">Bosanski</a></li>
+              <li><a href="#">Български</a></li>
+              <li><a href="#">Català</a></li>
+              <li><a href="#">Čeština</a></li>
+              <li><a href="#">Dansk</a></li>
+              <li><a href="#">Deutsch</a></li>
+              <li><a href="#">Eesti</a></li>
+              <li><a href="#">Ελληνικά</a></li>
+              <li><a href="#">Español</a></li>
+              <li><a href="#">Esperanto</a></li>
+              <li><a href="#">Euskara</a></li>
+              <li><a href="#">فارسی</a></li>
+              <li><a href="#">Français</a></li>
+              <li><a href="#">Galego</a></li>
+              <li><a href="#">한국어</a></li>
+              <li><a href="#">עברית</a></li>
+              <li><a href="#">Hrvatski</a></li>
+              <li><a href="#">Italiano</a></li>
+              <li><a href="#">ქართული</a></li>
+              <li><a href="#">Latviešu</a></li>
+              <li><a href="#">Lietuvių</a></li>
+              <li><a href="#">Magyar</a></li>
+              <li><a href="#">Nederlands</a></li>
+              <li><a href="#">日本語</a></li>
+              <li><a href="#">Norsk bokmål</a></li>
+              <li><a href="#">Polski</a></li>
+              <li><a href="#">Português</a></li>
+              <li><a href="#">Română</a></li>
+              <li><a href="#">Русский</a></li>
+              <li><a href="#">Slovenčina</a></li>
+              <li><a href="#">Slovenščina</a></li>
+              <li><a href="#">Српски / srpski</a></li>
+              <li><a href="#">Srpskohrvatski / српскохрватски</a></li>
+              <li><a href="#">Suomi</a></li>
+              <li><a href="#">Svenska</a></li>
+              <li><a href="#">ไทย</a></li>
+              <li><a href="#">Tiếng Việt</a></li>
+              <li><a href="#">Türkçe</a></li>
+              <li><a href="#">Українська</a></li>
+              <li><a href="#">中文</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search" style="padding-top: 5px">
+          <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder="Enter text...">
+          </div>
+          <button type="submit" class="btn-default btn-lg">Search</button>
+        </form>
+      </div>
+
+    </div>
+  </nav>
+</div>
+
+<div id="page0" style="display: block">
+
+    <div class="row" style="padding-bottom: 20px">
+
+      <div class="col-lg-4 col-lg-offset-2 text-center" style="padding-top: 70px">
+        <img src="book.png" alt="book" style="max-height: 50px" align="top">
+        <h2>1 000 000+ </h2>
+        <h4>Deutsch <a href="#" onClick="showMyDiv();"><strong>English</strong></a> Español Français Italiano</h4>
+        <ul class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+          <strong>(...)</strong>
+          <span class="caret"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">Nederlands</a></li>
+              <li><a href="#">日本語</a></li>
+              <li><a href="#">Polski</a></li>
+              <li><a href="#">Русский</a></li>
+              <li><a href="#">Sinugboanong</a></li>
+              <li><a href="#">Binisaya</a></li>
+              <li><a href="#">Svenska</a></li>
+              <li><a href="#">Tiếng</a></li>
+              <li><a href="#">Việt</a></li>
+              <li><a href="#">Winaray</a></li>
+            </ul>
+          </ul>
+      </div>
+
+      <div class="col-lg-4 text-center" style="padding-top: 70px">
+        <img src="book.png" alt="book" style="max-height: 50px;" align="top">
+        <h2>100 000+ </h2>
+        <h4>العربية Azərbaycanca Bân-lâm-gú / Hō-ló-oē Беларуская</h4>
+        <ul class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+          <strong>(...)</strong>
+          <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Català</a></li>
+              <li><a href="#">Čeština</a></li>
+              <li><a href="#">Dansk</a></li>
+              <li><a href="#">Eesti</a></li>
+              <li><a href="#">Ελληνικά</a></li>
+              <li><a href="#">فارسی </a></li>
+              <li><a href="#">Galego</a></li>
+              <li><a href="#">한국어</a></li>
+              <li><a href="#">Հայերեն</a></li>
+              <li><a href="#"> हिन्दी</a></li>
+            </ul>
+          </ul>
+      </div>
+
+    </div>
+
+      <div class="row">
+
+      <div class="col-lg-4 col-lg-offset-2 text-center" style="padding-top: 50px">
+        <img src="book.png" alt="book" style="max-height: 50px;" align="top">
+        <h2>10 000+ </h2>
+        <h4>Afrikaans Alemannisch አማርኛ</h4>
+        <ul class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+          <strong>(...)</strong>
+          <span class="caret"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">Aragonés</a></li>
+              <li><a href="#">Asturianu</a></li>
+              <li><a href="#">বাংলা</a></li>
+              <li><a href="#">Basa</a></li>
+              <li><a href="#">Banyumasan</a></li>
+              <li><a href="#">Башҡортса</a></li>
+              <li><a href="#">Беларуская (Тарашкевіца)</a></li>
+              <li><a href="#">বিষ্ণুপ্রিয়া মণিপুরী</a></li>
+              <li><a href="#">Boarisch</a></li>
+              <li><a href="#">Bosanski</a></li>
+              <li><a href="#"> Brezhoneg</a></li>
+              <li><a href="#">Чӑвашла</a></li>
+              <li><a href="#">Cymraeg</a></li>
+              <li><a href="#">Føroyskt</a></li>
+              <li><a href="#">Føroyskt</a></li>
+            </ul>
+          </ul>
+        </div>
+
+      <div class="col-lg-4 text-center" style="padding-bottom: 20px; padding-top: 50px">
+        <img src="book.png" alt="book" style="max-height: 50px;" align="top">
+        <h2>100+</h2>
+        <h4>Akan Аҧсуа Bamanankan</h4>
+        <ul class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <strong>(...)</strong>
+          <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Bislama</a></li>
+              <li><a href="#">Chamoru</a></li>
+              <li><a href="#">Chichewa</a></li>
+              <li><a href="#">Eʋegbe</a></li>
+              <li><a href="#">Gĩkũyũ</a></li>
+              <li><a href="#">𐌲𐌿𐍄𐌹𐍃𐌺</a></li>
+              <li><a href="#"> ᐃᓄᒃᑎᑐᑦ / Inuktitut</a></li>
+              <li><a href="#"> كشميري</a></li>
+              <li><a href="#"> Молдовеняскэ</a></li>
+              <li><a href="#">Luganda</a></li>
+              <li><a href="#">Na</a></li>
+              <li><a href="#">Vosa</a></li>
+              <li><a href="#">Vaka-Viti</a></li>
+              <li><a href="#">Norfuk / Pitkern</a></li>
+              <li><a href="#">Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ </a></li>
+            </ul>
+          </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted navbar-fixed-bottom text-center"><span><img src="wikiLang.png" alt="Languages" style="max-height: 25px; padding-left: 10px"><strong>? </strong>|</span> Terms of Use | Privacy Policy</p>
+      </div>
+    </footer>
+</div>
+
+<div id="page1" style="display: none">
+  <div class="row">
+    <div class="sidebar col-lg-2">
+      <ul class="nav nav-sidebar">
+        <li><a href="#">Donate</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Random Localized Article</a></li>
+        <li><a href="#">Random International Article</a></li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <strong>Interact with Wikipedia</strong>
+            <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About Wikipedia</a></li>
+                <li><a href="#">Recent Changes</a></li>
+                <li><a href="#">Contact Page</a></li>
+              </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <strong>Tools</strong>
+            <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">What Links Here</a></li>
+                <li><a href="#">Related Changes</a></li>
+                <li><a href="#">Upload File</a></li>
+                <li><a href="#">Special Pages</a></li>
+                <li><a href="#">Permanent Link</a></li>
+                <li><a href="#">Page Information</a></li>
+                <li><a href="#">Wikidata Item</a></li>
+              </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <strong>Print/Export</strong>
+            <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Create a Book</a></li>
+                <li><a href="#">Download as PDF</a></li>
+                <li><a href="#">Printable Version</a></li>
+              </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <strong>Other Wikipedia Projects</strong>
+            <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Wikimedia Commons</a></li>
+                <li><a href="#">Meta-Wiki</a></li>
+                <li><a href="#">Wikispecies</a></li>
+                <li><a href="#">Wikimedia Commons</a></li>
+                <li><a href="#">Wikibooks</a></li>
+                <li><a href="#">Wikidata</a></li>
+                <li><a href="#">Wikinews</a></li>
+                <li><a href="#">Wikiquote</a></li>
+                <li><a href="#">Wikisource</a></li>
+                <li><a href="#">Wikiversity</a></li>
+                <li><a href="#">Wikivoyage</a></li>
+              </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-lg-10" style="padding-right: 50px; padding-left: 0px">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+            <a href="#"><strong><span title="Find More 'This Day in History' Articles"><h1>This Day in History</h1></span></strong></a>
+            <img src="boat.jpg" alt="boat" style="max-height: 100px" align="left">
+            <p>
+            On 28 April 1789, a mutiny on HMS Bounty in the south Pacific was led by Fletcher Christian. Bounty had left England in 1787 on a mission to collect breadfruit plants from Tahiti. During a five-month layover there, many of the men were in relationships with native Polynesians. Lieutenant William Bligh handed out increasingly harsh punishments and abuse, especially to Christian, and morale plummeted. After three weeks back at sea, Bligh and 18 of his crew were forced into the ship's small uncovered launch, and had to row and sail more than 4,000 miles (6,400 km) to reach safety. In 1791, 14 of the Bounty crew were arrested in Tahiti; four of these died when their ship ran aground on the Great Barrier Reef, four were acquitted at a court martial, three were pardoned and three were hanged. On Pitcairn Island, just one surviving mutineer, John Adams, was discovered in 1808; Christian and most of the rest had been killed, by each other and by the mistreated Tahitians they brought with them. Their descendants would continue to inhabit Pitcairn into the 21st century. The view of Bligh as an overbearing monster has in recent years been challenged by historians. (Full article...)
+            </p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <a href="#"><strong><span title="Find More 'In the News' Articles"><h1>In the News</h1></span></strong></a>
+            <img src="mem.jpg" alt="memorial" style="max-height: 100px" align="left">
+              <p>The National Museum of Natural History, in New Delhi, India, and its entire collection, are destroyed by fire.</p>
+              <p>In the UK, following a second inquest, the jury reaches a verdict of unlawful killing in respect of the 96 victims of the Hillsborough disaster (         memorial pictured) in 1989.</p>
+              <p>Kenyans Epud Kipchoge and Jemima Sumgong win the men's and women's London Marathon, respectively.</p>
+              <p>Scientists announce the discovery of an extensive reef system near the Amazon River, covering an estimated 3,600 square miles (9,300 km2).</p>
+              <p>Idriss Déby is elected to a fifth term as President of Chad.</p>
+              <p>American singer and songwriter Prince dies at the age of 57.</p>
+              <p>Recent deaths: Tommy Kono Inge King Banharn Silpa-archa</p>
+        </div>
+      </div>
+      <div class="row" style="padding-bottom: 50px">
+        <div class="col-lg-6 text-center">
+            <a href="#"><strong><span title="Find More 'Did You Know...' Articles"><h1>Did You Know...</h1></span></strong></a>
+            <img src="complex.JPG" alt="complex" style="max-height: 100px" align="left">
+            <p>... that the interior of the Jami Masjid, Khambhat, (pictured) has an open courtyard with 100 columns built from ruins of Hindu and Jain temples?</p>
+            <p>... that Bogna Burska's initial painting compositions were narratives of congealed blood forms made with red paints applied by fingers on walls, canvas, and glass?</p>
+            <p>... that an inscription in Harran dated from 568 CE is among the earliest known appearances of Arabic in Syria?</p>
+            <p>... that soprano Tamara Wilson won the Richard Tucker Award, "one of the most prestigious prizes in opera"?</p>
+            <p>... that the Hotel Amalo suicide car bombing was perpetrated by a 60-year-old Norwegian Labour Party supporter and Al-Shabaab member?</p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <a href="#"><strong><span title="Find More 'On This Day...' Articles"><h1>On This Day...</h1></span></strong></a>
+            <img src="firstlady.jpg" alt="firstlady" style="max-height: 125px" align="left">
+            <p>April 28: International Workers' Memorial Day; Maundy Thursday (Eastern Christianity, 2016)</p>
+            <p>1253 – Nichiren, a Japanese monk, expounded Namu Myōhō Renge Kyō for the first time and declared it to be the essence of Buddhism, in effect founding Nichiren Buddhism.</p>
+            <p>1887 – A week after being arrested by the Prussian Secret Police, French police inspector Guillaume Schnaebelé was released on order of German Emperor William I, defusing a possible war.</p>
+            <p>1949 – Former First Lady of the Philippines Aurora Quezon (pictured), her daughter, and ten others were assassinated by the military arm of the Philippine Communist Party.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+  <div class="container">
+    <p class="text-muted navbar-footer text-center"><span><img src="wikiLang.png" alt="Languages" style="max-height: 25px;"><strong>ENGLISH </strong>|</span> Terms of Use | Privacy Policy</p>
+  </div>
+</footer>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>
